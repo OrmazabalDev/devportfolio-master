@@ -56,8 +56,8 @@ export const siteConfig = {
         en: "Project 2",
       },
       description: {
-        es: "Descripción del proyecto 2 en español",
-        en: "Project 2 description in English",
+        es: "Próximamente",
+        en: "Coming soon",
       },
       link: "",
       skills: ["React", "Node.js"],
@@ -68,8 +68,8 @@ export const siteConfig = {
         en: "Project 3",
       },
       description: {
-        es: "Descripción del proyecto 3 en español",
-        en: "Project 3 description in English",
+        es: "Próximamente",
+        en: "Coming soon",
       },
       link: "",
       skills: ["Python", "Flask"],
