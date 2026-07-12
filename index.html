@@ -16,7 +16,7 @@
     <meta property="og:image" content="assets/img/og-devormazabal.png"> 
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png?v=2">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -61,27 +61,33 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <a href="#inicio" class="flex items-center gap-3 group relative">
-                    <div class="w-11 h-11 bg-brand-navy rounded-xl flex items-center justify-center font-bold text-xl shadow-sm group-hover:shadow-md transition-shadow relative overflow-hidden">
-                        <!-- Destello hover -->
-                        <div class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-500"></div>
-                        <span class="text-white relative z-10">D</span><span class="text-brand-blue relative z-10">O</span>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-bold text-xl tracking-tight leading-none"><span class="text-brand-navy">Dev</span><span class="text-brand-blue">Ormazabal</span></span>
-                        <span class="text-[0.65rem] font-semibold text-brand-gray tracking-[0.15em] mt-1 uppercase">DESARROLLO DE SOFTWARE</span>
-                    </div>
+                <a href="#inicio" class="flex items-center group relative py-1">
+                    <!-- Favicon/Isotipo solo para Móvil -->
+                    <img src="assets/favicon/favicon.png?v=5" alt="DevOrmazabal Isotipo" class="block sm:hidden h-9 w-auto transition-transform duration-300 group-hover:scale-105">
+                    <!-- Logo completo (Isotipo + Nombre) para Tablet y Desktop -->
+                    <img src="assets/logo/logo.png?v=5" alt="DevOrmazabal Logo" class="hidden sm:block h-9 md:h-11 w-auto transition-transform duration-300 group-hover:scale-[1.02]">
                 </a>
 
                 <!-- Menú Desktop -->
-                <nav class="hidden lg:flex space-x-8 items-center">
+                <nav class="hidden lg:flex space-x-6 items-center">
                     <a href="#inicio" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors">Inicio</a>
                     <a href="#servicios" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors">Servicios</a>
                     <a href="#sobre-mi" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors">Sobre mí</a>
                     <a href="#proceso" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors">Proceso</a>
                     <a href="#casos-uso" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors">Casos de uso</a>
                     <a href="#tecnologias" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors">Tecnologías</a>
-                    <a href="#contacto" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors mr-2">Contacto</a>
+                    <a href="#contacto" class="nav-link text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors">Contacto</a>
+                    
+                    <!-- Enlaces Redes -->
+                    <div class="flex items-center gap-3 border-l border-brand-border pl-4">
+                        <a href="https://github.com/OrmazabalDev" target="_blank" rel="noopener noreferrer" class="text-brand-gray hover:text-brand-blue transition-colors" aria-label="GitHub">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diego-ormazabal-m" target="_blank" rel="noopener noreferrer" class="text-brand-gray hover:text-brand-blue transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+
                     <a href="#contacto" class="px-5 py-2.5 rounded-lg bg-brand-navy text-white text-sm font-medium hover:bg-brand-blue transition-colors shadow-soft flex items-center gap-2">
                         <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span> Solicitar evaluación
                     </a>
@@ -106,6 +112,19 @@
                 <a href="#casos-uso" class="block px-3 py-3 rounded-md text-base font-medium text-brand-dark hover:bg-brand-light hover:text-brand-blue">Casos de uso</a>
                 <a href="#tecnologias" class="block px-3 py-3 rounded-md text-base font-medium text-brand-dark hover:bg-brand-light hover:text-brand-blue">Tecnologías</a>
                 <a href="#contacto" class="block px-3 py-3 rounded-md text-base font-medium text-brand-dark hover:bg-brand-light hover:text-brand-blue">Contacto</a>
+                
+                <!-- Social en Móvil -->
+                <div class="grid grid-cols-2 gap-2 pt-4 pb-2 border-t border-brand-border mt-3">
+                    <a href="https://github.com/OrmazabalDev" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 py-2 text-brand-gray hover:text-brand-blue transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                        <span class="text-[10px] font-mono">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/diego-ormazabal-m" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 py-2 text-brand-gray hover:text-brand-blue transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+                        <span class="text-[10px] font-mono">LinkedIn</span>
+                    </a>
+                </div>
+
                 <a href="#contacto" class="block w-full text-center mt-4 px-5 py-3 rounded-lg bg-brand-navy text-white text-base font-medium hover:bg-brand-blue transition-colors">Solicitar evaluación</a>
             </div>
         </div>
@@ -486,28 +505,37 @@
                 </div>
 
                 <!-- Caso 2 -->
-                <div class="bg-white rounded-2xl p-7 border border-brand-border flex flex-col justify-between reveal">
+                <div class="bg-white rounded-2xl p-7 border border-brand-border flex flex-col justify-between reveal ring-2 ring-brand-blue/20 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-blue text-white text-[9px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wide">
+                        Producto Propio
+                    </div>
                     <div>
-                        <span class="text-[10px] font-mono text-brand-blue border border-brand-blue/20 bg-blue-50 px-2.5 py-1 rounded-full uppercase tracking-wider font-semibold">Operación Móvil</span>
-                        <h4 class="text-lg font-bold text-brand-dark mt-4 mb-4">Apps móviles para operación interna</h4>
+                        <span class="text-[10px] font-mono text-brand-blue border border-brand-blue/20 bg-blue-50 px-2.5 py-1 rounded-full uppercase tracking-wider font-semibold">Verofix App</span>
+                        <h4 class="text-lg font-bold text-brand-dark mt-4 mb-4">Verofix - Reportes y Registro en Terreno</h4>
                         <div class="space-y-3.5 mb-6">
                             <div>
-                                <span class="text-xs font-bold uppercase text-brand-gray">Problema:</span>
-                                <p class="text-xs text-brand-gray mt-1 leading-relaxed">Escribir datos en fichas de papel en terreno genera retrasos en la carga y errores de legibilidad al digitalizar la información.</p>
+                                <span class="text-xs font-bold uppercase text-brand-gray">El Desafío:</span>
+                                <p class="text-xs text-brand-gray mt-1 leading-relaxed">Trabajar en subterráneos (pisos -3 bajo tierra), túneles o zonas sin señal donde las aplicaciones móviles convencionales se bloquean al requerir internet para guardar datos o generar reportes.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-bold uppercase text-brand-blue">Solución DevOrmazabal:</span>
-                                <p class="text-xs text-brand-gray mt-1 leading-relaxed">Creación de una aplicación móvil Android simple y offline-first para recopilar datos estructurados con validaciones en terreno.</p>
+                                <span class="text-xs font-bold uppercase text-brand-blue">Desarrollado por DevOrmazabal:</span>
+                                <p class="text-xs text-brand-gray mt-1 leading-relaxed">Aplicación Android <strong>100% offline-first</strong>. Permite recolectar datos estructurados, capturar fotografías y <strong>generar documentos PDF de reporte en tiempo real bajo tierra</strong>, almacenando todo localmente en el dispositivo de forma segura.</p>
                             </div>
                             <div>
-                                <span class="text-xs font-bold uppercase text-green-600">Resultado:</span>
-                                <p class="text-xs text-brand-gray mt-1 leading-relaxed">Sincronización instantánea de datos al conectarse a red, eliminación del uso de papel y disponibilidad inmediata de reportes operativos.</p>
+                                <span class="text-xs font-bold uppercase text-green-600">Impacto y Resultados:</span>
+                                <p class="text-xs text-brand-gray mt-1 leading-relaxed">Continuidad operativa absoluta sin depender de conectividad celular, digitalización inmediata en PDF local y sincronización automática al recuperar señal.</p>
                             </div>
                         </div>
                     </div>
-                    <a href="#contacto" class="w-full text-center py-2.5 border border-brand-border hover:border-brand-blue hover:text-brand-blue text-xs font-bold rounded-lg text-brand-dark transition-colors bg-white">
-                        Consultar por una solución similar
-                    </a>
+                    <div class="flex flex-col gap-2 mt-auto">
+                        <a href="politica-privacidad-verofix.html" class="w-full text-center py-2.5 border border-brand-border hover:border-brand-blue hover:text-brand-blue text-xs font-bold rounded-lg text-brand-dark transition-colors bg-white flex items-center justify-center gap-1.5">
+                            <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            Política de Privacidad
+                        </a>
+                        <a href="terminos-verofix.html" class="w-full text-center py-2.5 text-xs font-medium text-brand-gray hover:text-brand-blue transition-colors">
+                            Ver Términos y Condiciones
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Caso 3 -->
@@ -752,18 +780,24 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-white/10 pb-10">
                 <!-- Branding -->
                 <div class="flex flex-col gap-3">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center font-bold text-base border border-white/10">
-                            <span class="text-white">D</span><span class="text-brand-blue">O</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="font-bold text-base tracking-tight leading-none">DevOrmazabal</span>
-                            <span class="text-[0.55rem] font-semibold text-blue-200 tracking-[0.15em] mt-0.5">DESARROLLO DE SOFTWARE</span>
-                        </div>
+                    <div class="flex items-center">
+                        <!-- Favicon/Isotipo solo para Móvil -->
+                        <img src="assets/favicon/favicon.png?v=5" alt="DevOrmazabal Isotipo" class="block sm:hidden h-9 w-auto">
+                        <!-- Logo completo (Isotipo + Nombre) para Tablet y Desktop -->
+                        <img src="assets/logo/logo-footer.png?v=5" alt="DevOrmazabal Logo" class="hidden sm:block h-9 md:h-10 w-auto">
                     </div>
                     <p class="text-xs text-blue-200 mt-2 leading-relaxed max-w-sm">
                         Del problema al sistema funcionando. Soluciones claras y prácticas adaptadas a tu flujo operativo.
                     </p>
+                    <!-- Redes Sociales -->
+                    <div class="flex items-center gap-4 mt-2">
+                        <a href="https://github.com/OrmazabalDev" target="_blank" rel="noopener noreferrer" class="text-blue-200 hover:text-white transition-colors" aria-label="GitHub">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diego-ormazabal-m" target="_blank" rel="noopener noreferrer" class="text-blue-200 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Links rápidos -->
@@ -795,8 +829,13 @@
                 </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row justify-between items-center mt-8 gap-4">
-                <span class="text-xs text-blue-200/60 font-medium">Desarrollo web y automatización a medida</span>
+            <div class="flex flex-col sm:flex-row justify-between items-center mt-8 gap-4 border-t border-white/5 pt-8">
+                <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs text-blue-200/60 font-medium">
+                    <span class="text-blue-200/80">Desarrollo web y automatización a medida</span>
+                    <span class="hidden sm:inline text-blue-200/20">|</span>
+                    <a href="politica-privacidad-verofix.html" class="hover:text-white transition-colors">Privacidad de Verofix</a>
+                    <a href="terminos-verofix.html" class="hover:text-white transition-colors">Términos de Verofix</a>
+                </div>
                 <span class="text-xs text-blue-200/50">
                     &copy; 2026 DevOrmazabal. Todos los derechos reservados.
                 </span>

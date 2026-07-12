@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Verofix | DevOrmazabal</title>
+    <meta name="description" content="Política de Privacidad de la aplicación Verofix, desarrollada por Diego Ormazabal (DevOrmazabal).">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png?v=2">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Segoe UI', 'Arial', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#001B68',
+                            blue: '#0B73FF',
+                            dark: '#111827',
+                            gray: '#374151',
+                            light: '#F8F8F8',
+                            border: '#E5E7EB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased bg-brand-light text-brand-dark selection:bg-brand-blue selection:text-white">
+
+    <!-- HEADER -->
+    <header class="bg-white border-b border-brand-border sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center group">
+                    <img src="assets/logo/logo.png?v=5" alt="DevOrmazabal Logo" class="h-8 w-auto transition-transform duration-300 group-hover:scale-[1.02]">
+                </a>
+                <a href="index.html" class="text-sm font-medium text-brand-gray hover:text-brand-blue flex items-center gap-1.5 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Volver al inicio
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <article class="bg-white border border-brand-border rounded-2xl shadow-soft p-6 sm:p-10">
+            <div class="border-b border-brand-border pb-6 mb-8">
+                <span class="text-xs font-mono text-brand-blue font-bold tracking-wider uppercase block mb-2">Documento Legal</span>
+                <h1 class="text-3xl font-extrabold text-brand-navy sm:text-4xl mb-3">Política de Privacidad</h1>
+                <p class="text-xs text-brand-gray">Última actualización: 12 de julio de 2026</p>
+            </div>
+
+            <div class="space-y-6 text-sm text-brand-gray leading-relaxed">
+                <p>
+                    La presente Política de Privacidad describe el modo en que se recopilan, utilizan y protegen los datos en la aplicación móvil <strong>Verofix</strong>, desarrollada por el profesional independiente <strong>Diego Ormazabal (DevOrmazabal)</strong>.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">1. Compromiso de Privacidad y Funcionamiento Offline</h2>
+                <p>
+                    En DevOrmazabal nos tomamos muy en serio la privacidad de los usuarios. La aplicación <strong>Verofix</strong> está diseñada bajo el principio de minimización de datos y soberanía local. La app es <strong>100% offline-first</strong>; esto significa que todas sus operaciones principales —incluyendo el registro de datos, el almacenamiento de información y la <strong>generación de archivos PDF de reporte</strong>— se realizan localmente en el dispositivo sin necesidad de conexión a internet. Esto garantiza la operatividad del sistema en lugares de difícil cobertura, como subterráneos (pisos -3 bajo tierra), túneles o áreas rurales.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">2. Permisos y Datos Recopilados</h2>
+                <p>
+                    Para cumplir con sus funciones operativas de control y registro, la aplicación puede solicitar el acceso a los siguientes recursos del dispositivo móvil:
+                </p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Cámara y Galería de Fotos:</strong> Permite adjuntar imágenes de verificación a los reportes. Estas fotos se guardan únicamente en el almacenamiento local del dispositivo como parte del archivo del reporte.</li>
+                    <li><strong>Almacenamiento (Lectura y Escritura):</strong> Requerido para guardar datos de configuración, la base de datos local del sistema y para **guardar y generar los documentos PDF** en la memoria del dispositivo móvil.</li>
+                    <li><strong>Acceso a Internet y Red (Opcional):</strong> Utilizado de manera secundaria únicamente para comprobar si hay señal y, en caso de que la organización del usuario lo haya configurado, transmitir los datos ya recopilados a su servidor de destino. El núcleo de la app no requiere conexión para funcionar o guardar.</li>
+                    <li><strong>Ubicación (GPS):</strong> Si la funcionalidad está activada por el usuario, se obtendrán las coordenadas de localización de forma local con el único fin de georreferenciar el reporte en terreno. No se realiza un rastreo en segundo plano de su ubicación.</li>
+                </ul>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">3. Uso de la Información</h2>
+                <p>
+                    Cualquier dato ingresado o capturado en la aplicación móvil <strong>Verofix</strong> tiene como único propósito el procesamiento de reportes y tareas internas de gestión definidas por el cliente o usuario. 
+                </p>
+                <p>
+                    <strong>No compartimos, vendemos ni alquilamos</strong> información personal a empresas de publicidad ni a terceros con fines comerciales. Los datos recopilados solo se transmiten al servidor o sistema que la organización usuaria de la app haya configurado específicamente.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">4. Almacenamiento Local y Seguridad de los Datos</h2>
+                <p>
+                    Dado que Verofix opera bajo un esquema <strong>100% local y offline-first</strong>, toda la información ingresada permanece exclusivamente en la base de datos y memoria del propio dispositivo móvil del usuario. Los documentos PDF generados se guardan de forma local en la carpeta del dispositivo elegida por el usuario. No existe una copia automática en la nube de estos archivos a menos que el usuario o su organización inicien manualmente una exportación o transmisión a través de protocolos seguros (HTTPS/SSL).
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">5. Derechos del Usuario</h2>
+                <p>
+                    Usted tiene derecho a acceder, rectificar o eliminar cualquier dato personal que hayamos recopilado en el contexto de soporte técnico. Como la mayor parte del procesamiento se realiza a nivel local o en servidores administrados por su propia organización, la eliminación física de registros dentro de la base de datos de producción corporativa deberá gestionarse con el administrador del sistema de su empresa.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">6. Cambios a esta Política</h2>
+                <p>
+                    Esta política puede ser modificada periódicamente para reflejar mejoras técnicas, de seguridad o cambios en las normativas vigentes. Las modificaciones serán publicadas directamente en esta página web para su consulta pública y transparencia.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">7. Contacto</h2>
+                <p>
+                    Si tiene alguna duda o consulta respecto al procesamiento de datos, el funcionamiento de la app o sus derechos de privacidad, puede contactar al desarrollador en:
+                </p>
+                <div class="bg-brand-light p-4 rounded-xl border border-brand-border font-mono text-xs text-brand-navy flex flex-col gap-1.5">
+                    <div><strong>Desarrollador:</strong> Diego Ormazabal</div>
+                    <div><strong>Sitio Web:</strong> <a href="index.html" class="text-brand-blue hover:underline">devormazabal.github.io</a></div>
+                    <div><strong>Contacto Directo:</strong> <a href="mailto:ormazabal.dev@gmail.com" class="text-brand-blue hover:underline">ormazabal.dev@gmail.com</a></div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-navy text-white py-8 border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
+            <span class="text-xs text-blue-200/60 font-medium">Verofix - Solución de Reportes Operativos</span>
+            <span class="text-xs text-blue-200/40 block mt-2 sm:mt-0">
+                &copy; 2026 DevOrmazabal. Todos los derechos reservados.
+            </span>
+        </div>
+    </footer>
+
+</body>
+</html>
