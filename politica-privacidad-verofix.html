@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Verofix | DevOrmazabal</title>
-    <meta name="description" content="Política de Privacidad de la aplicación Verofix, desarrollada por Diego Ormazabal (DevOrmazabal).">
-    
-    <!-- Favicon -->
+    <title>Política de Privacidad de Verofix | DevOrmazabal</title>
+    <meta name="description" content="Política de Privacidad de Verofix: almacenamiento local, analítica opcional, conservación, seguridad y derechos de los usuarios.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ormazabaldev.github.io/politica-privacidad-verofix.html">
     <link rel="icon" type="image/png" href="assets/favicon/favicon.png?v=2">
-
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -35,98 +33,159 @@
     </script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="antialiased bg-brand-light text-brand-dark selection:bg-brand-blue selection:text-white">
-
-    <!-- HEADER -->
+<body class="antialiased bg-brand-light text-brand-dark selection:bg-brand-blue selection:text-white overflow-x-hidden">
     <header class="bg-white border-b border-brand-border sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="flex items-center group">
-                    <img src="assets/logo/logo.png?v=5" alt="DevOrmazabal Logo" class="h-8 w-auto transition-transform duration-300 group-hover:scale-[1.02]">
+                    <img src="assets/logo/logo.png?v=5" alt="DevOrmazabal" class="h-8 w-auto transition-transform duration-300 group-hover:scale-[1.02]">
                 </a>
                 <a href="index.html" class="text-sm font-medium text-brand-gray hover:text-brand-blue flex items-center gap-1.5 transition-colors">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                     Volver al inicio
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- CONTENIDO -->
     <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <article class="bg-white border border-brand-border rounded-2xl shadow-soft p-6 sm:p-10">
+        <article class="min-w-0 bg-white border border-brand-border rounded-2xl shadow-soft p-6 sm:p-10">
             <div class="border-b border-brand-border pb-6 mb-8">
-                <span class="text-xs font-mono text-brand-blue font-bold tracking-wider uppercase block mb-2">Documento Legal</span>
-                <h1 class="text-3xl font-extrabold text-brand-navy sm:text-4xl mb-3">Política de Privacidad</h1>
-                <p class="text-xs text-brand-gray">Última actualización: 12 de julio de 2026</p>
+                <span class="text-xs font-mono text-brand-blue font-bold tracking-wider uppercase block mb-2">Documento legal</span>
+                <h1 class="text-3xl font-extrabold text-brand-navy sm:text-4xl mb-3">Política de Privacidad de Verofix</h1>
+                <p class="text-xs text-brand-gray">Última actualización: <time datetime="2026-07-15">15 de julio de 2026</time></p>
             </div>
 
-            <div class="space-y-6 text-sm text-brand-gray leading-relaxed">
+            <div class="min-w-0 break-words space-y-6 text-sm text-brand-gray leading-relaxed">
                 <p>
-                    La presente Política de Privacidad describe el modo en que se recopilan, utilizan y protegen los datos en la aplicación móvil <strong>Verofix</strong>, desarrollada por el profesional independiente <strong>Diego Ormazabal (DevOrmazabal)</strong>.
+                    Esta Política explica cómo Verofix accede, procesa, conserva y permite compartir información. Verofix es desarrollada y publicada por <strong>Diego Ormazabal</strong>, profesional independiente que opera bajo el nombre <strong>DevOrmazabal</strong>, en adelante el "Desarrollador".
                 </p>
 
-                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">1. Compromiso de Privacidad y Funcionamiento Offline</h2>
-                <p>
-                    En DevOrmazabal nos tomamos muy en serio la privacidad de los usuarios. La aplicación <strong>Verofix</strong> está diseñada bajo el principio de minimización de datos y soberanía local. La app es <strong>100% offline-first</strong>; esto significa que todas sus operaciones principales —incluyendo el registro de datos, el almacenamiento de información y la <strong>generación de archivos PDF de reporte</strong>— se realizan localmente en el dispositivo sin necesidad de conexión a internet. Esto garantiza la operatividad del sistema en lugares de difícil cobertura, como subterráneos (pisos -3 bajo tierra), túneles o áreas rurales.
-                </p>
-
-                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">2. Permisos y Datos Recopilados</h2>
-                <p>
-                    Para cumplir con sus funciones operativas de control y registro, la aplicación puede solicitar el acceso a los siguientes recursos del dispositivo móvil:
-                </p>
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">1. Responsable y contacto</h2>
                 <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>Cámara y Galería de Fotos:</strong> Permite adjuntar imágenes de verificación a los reportes. Estas fotos se guardan únicamente en el almacenamiento local del dispositivo como parte del archivo del reporte.</li>
-                    <li><strong>Almacenamiento (Lectura y Escritura):</strong> Requerido para guardar datos de configuración, la base de datos local del sistema y para **guardar y generar los documentos PDF** en la memoria del dispositivo móvil.</li>
-                    <li><strong>Acceso a Internet y Red (Opcional):</strong> Utilizado de manera secundaria únicamente para comprobar si hay señal y, en caso de que la organización del usuario lo haya configurado, transmitir los datos ya recopilados a su servidor de destino. El núcleo de la app no requiere conexión para funcionar o guardar.</li>
-                    <li><strong>Ubicación (GPS):</strong> Si la funcionalidad está activada por el usuario, se obtendrán las coordenadas de localización de forma local con el único fin de georreferenciar el reporte en terreno. No se realiza un rastreo en segundo plano de su ubicación.</li>
+                    <li><strong>Responsable:</strong> Diego Ormazabal (DevOrmazabal).</li>
+                    <li><strong>Correo de privacidad:</strong> <a href="mailto:ormazabal.dev@gmail.com" class="text-brand-blue hover:underline">ormazabal.dev@gmail.com</a>.</li>
+                    <li><strong>Sitio:</strong> <a href="https://ormazabaldev.github.io" class="text-brand-blue hover:underline">https://ormazabaldev.github.io</a>.</li>
+                    <li><strong>Política pública:</strong> <a href="https://ormazabaldev.github.io/politica-privacidad-verofix.html" class="text-brand-blue hover:underline">esta página</a>.</li>
                 </ul>
 
-                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">3. Uso de la Información</h2>
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">2. Alcance y funcionamiento local</h2>
                 <p>
-                    Cualquier dato ingresado o capturado en la aplicación móvil <strong>Verofix</strong> tiene como único propósito el procesamiento de reportes y tareas internas de gestión definidas por el cliente o usuario. 
+                    Verofix permite crear reportes de inspección técnica. La información de trabajo se conserva localmente en el dispositivo. La app no requiere una cuenta, no sincroniza reportes en la nube y no envía al Desarrollador nombres, correos, empresas, fotografías, firmas, observaciones ni documentos PDF.
                 </p>
                 <p>
-                    <strong>No compartimos, vendemos ni alquilamos</strong> información personal a empresas de publicidad ni a terceros con fines comerciales. Los datos recopilados solo se transmiten al servidor o sistema que la organización usuaria de la app haya configurado específicamente.
-                </p>
-
-                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">4. Almacenamiento Local y Seguridad de los Datos</h2>
-                <p>
-                    Dado que Verofix opera bajo un esquema <strong>100% local y offline-first</strong>, toda la información ingresada permanece exclusivamente en la base de datos y memoria del propio dispositivo móvil del usuario. Los documentos PDF generados se guardan de forma local en la carpeta del dispositivo elegida por el usuario. No existe una copia automática en la nube de estos archivos a menos que el usuario o su organización inicien manualmente una exportación o transmisión a través de protocolos seguros (HTTPS/SSL).
+                    Respecto del contenido almacenado únicamente en el dispositivo, el usuario o la organización para la que actúa determina qué información incorpora y con qué finalidad. El Desarrollador no puede acceder remotamente a ese contenido. Respecto de la telemetría autorizada y los mensajes enviados voluntariamente a soporte, el Desarrollador es responsable del tratamiento descrito en esta Política.
                 </p>
 
-                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">5. Derechos del Usuario</h2>
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">3. Información procesada en el dispositivo</h2>
+                <p>Según las funciones utilizadas, Verofix puede procesar localmente:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Perfil profesional:</strong> nombre, apellido, cargo o rol y correo opcional.</li>
+                    <li><strong>Empresas o clientes:</strong> nombre, área, logotipo y texto de pie de página.</li>
+                    <li><strong>Reportes:</strong> título, folio, fechas, tipo de visita, cliente, ubicación escrita manualmente, propósito, alcance, metodología, listas de verificación, observaciones y resultados.</li>
+                    <li><strong>Hallazgos y acciones:</strong> descripciones, categorías, severidades, responsables, plazos y fotografías.</li>
+                    <li><strong>Firmas:</strong> nombre, rol, tipo de firmante y trazo de firma táctil.</li>
+                    <li><strong>PDF:</strong> documentos generados con la información elegida por el usuario.</li>
+                </ul>
+                <p>Estos datos se utilizan para editar, conservar, visualizar y generar reportes dentro de Verofix. No forman parte de la analítica.</p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">4. Analítica opcional de la beta</h2>
                 <p>
-                    Usted tiene derecho a acceder, rectificar o eliminar cualquier dato personal que hayamos recopilado en el contexto de soporte técnico. Como la mayor parte del procesamiento se realiza a nivel local o en servidores administrados por su propia organización, la eliminación física de registros dentro de la base de datos de producción corporativa deberá gestionarse con el administrador del sistema de su empresa.
+                    Con autorización previa, Verofix puede transmitir a <strong>PostHog Cloud EU</strong> eventos limitados para evaluar estabilidad y uso general de la beta. El Desarrollador actúa como responsable y PostHog, Inc. como proveedor encargado de procesar la telemetría siguiendo sus instrucciones.
+                </p>
+                <p>La analítica puede incluir:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Un identificador aleatorio de instalación, no asociado por Verofix a nombre o correo.</li>
+                    <li>Nombre del evento, fecha y hora.</li>
+                    <li>Versión y compilación de Verofix.</li>
+                    <li>Versión de Android, tipo general de dispositivo e idioma.</li>
+                    <li>Propiedades técnicas acotadas, como duración aproximada, cantidad agrupada de páginas o código de error controlado.</li>
+                </ul>
+                <p>
+                    Los eventos permitidos describen hitos generales, como completar el registro inicial, crear o finalizar un reporte, guardar un borrador, generar un PDF o encontrar un error controlado.
+                </p>
+                <p>
+                    <strong>Verofix no envía a PostHog</strong> títulos, folios, nombres, correos, empresas, clientes, ubicaciones, textos libres, fotografías, firmas, logotipos, contenido de reportes, rutas de archivos ni PDF. Tampoco utiliza el identificador publicitario, crea perfiles personales, graba sesiones, captura pantallas, registra pulsaciones ni genera mapas de calor.
+                </p>
+                <p>
+                    La finalidad es detectar fallos, medir si los flujos principales se completan y priorizar mejoras. La base utilizada es el consentimiento. Rechazar o retirar la autorización no limita las funciones principales de Verofix.
                 </p>
 
-                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">6. Cambios a esta Política</h2>
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">5. Permisos y acceso a recursos</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Cámara:</strong> se solicita sólo cuando el usuario decide capturar una fotografía.</li>
+                    <li><strong>Imágenes:</strong> se seleccionan mediante los selectores del sistema, sin acceso general a todo el almacenamiento.</li>
+                    <li><strong>Ubicación:</strong> Verofix no solicita ubicación ni obtiene coordenadas GPS. Las ubicaciones incluidas en reportes son escritas manualmente.</li>
+                    <li><strong>Internet:</strong> sólo se utiliza en compilaciones con analítica opcional y después de su autorización. El contenido del reporte permanece excluido. Al compartir un PDF, la app elegida por el usuario puede usar su propia conexión bajo sus políticas.</li>
+                </ul>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">6. Almacenamiento y seguridad</h2>
                 <p>
-                    Esta política puede ser modificada periódicamente para reflejar mejoras técnicas, de seguridad o cambios en las normativas vigentes. Las modificaciones serán publicadas directamente en esta página web para su consulta pública y transparencia.
+                    La base de datos, fotografías y firmas se guardan en el espacio privado asignado a Verofix por Android. Los PDF se comparten mediante accesos temporales de sólo lectura. Las copias de seguridad automáticas de Android están deshabilitadas.
+                </p>
+                <p>
+                    Verofix no aplica cifrado adicional propio a la base de datos. La protección en reposo depende del cifrado y bloqueo del dispositivo. Se recomienda mantener Android actualizado y utilizar PIN o biometría.
+                </p>
+                <p>
+                    Los eventos autorizados se transmiten cifrados mediante HTTPS a la región europea de PostHog Cloud. Si el dispositivo está sin conexión, pueden permanecer temporalmente en una cola local hasta ser enviados o descartados.
                 </p>
 
-                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">7. Contacto</h2>
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">7. Conservación y eliminación</h2>
                 <p>
-                    Si tiene alguna duda o consulta respecto al procesamiento de datos, el funcionamiento de la app o sus derechos de privacidad, puede contactar al desarrollador en:
+                    El contenido local permanece hasta que el usuario elimina el registro, borra los datos de Verofix o desinstala la app. Los PDF exportados y copias enviadas a terceros son independientes.
                 </p>
-                <div class="bg-brand-light p-4 rounded-xl border border-brand-border font-mono text-xs text-brand-navy flex flex-col gap-1.5">
-                    <div><strong>Desarrollador:</strong> Diego Ormazabal</div>
-                    <div><strong>Sitio Web:</strong> <a href="index.html" class="text-brand-blue hover:underline">devormazabal.github.io</a></div>
-                    <div><strong>Contacto Directo:</strong> <a href="mailto:ormazabal.dev@gmail.com" class="text-brand-blue hover:underline">ormazabal.dev@gmail.com</a></div>
+                <p>
+                    La telemetría autorizada se conservará por un máximo de doce meses, salvo eliminación anterior. Al retirar la autorización se detiene la recopilación futura y se eliminan del dispositivo el identificador anónimo y las colas locales de analítica. El usuario puede solicitar la eliminación anticipada de eventos ya enviados asociados a su identificador anónimo escribiendo al correo de privacidad.
+                </p>
+                <p>
+                    Los mensajes enviados a soporte se conservarán durante el tiempo razonablemente necesario para gestionar la solicitud y podrán mantenerse cuando exista una obligación legal o sea necesario ejercer o defender derechos.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">8. Proveedores y comunicación a terceros</h2>
+                <p>
+                    El Desarrollador no vende, alquila ni comparte datos con fines publicitarios. PostHog, Inc. procesa únicamente la telemetría autorizada como proveedor tecnológico. Sus condiciones de tratamiento, medidas de seguridad y subencargados se documentan en su Acuerdo de Tratamiento de Datos y centro de confianza.
+                </p>
+                <p>
+                    Al compartir un PDF, el usuario elige otra aplicación o destinatario. El tratamiento posterior se rige por las condiciones del tercero seleccionado.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">9. Derechos</h2>
+                <p>
+                    El contenido local puede consultarse, corregirse o eliminarse desde Verofix o los ajustes de Android. El Desarrollador no puede recuperar ni borrar remotamente datos que nunca salieron del dispositivo.
+                </p>
+                <p>
+                    Para retirar el consentimiento, solicitar acceso, rectificación, supresión, oposición o información sobre telemetría y soporte, escriba a <a href="mailto:ormazabal.dev@gmail.com" class="text-brand-blue hover:underline">ormazabal.dev@gmail.com</a>. Para localizar telemetría anónima se podrá solicitar el identificador de analítica mostrado por la app y antecedentes razonables para verificar la solicitud.
+                </p>
+                <p>
+                    Esta Política busca ajustarse a la Ley N° 19.628 y, desde su entrada en vigor y cuando resulte aplicable, a la Ley N° 21.719 y sus normas complementarias. Nada limita derechos irrenunciables reconocidos por la legislación aplicable.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">10. Menores de edad</h2>
+                <p>
+                    Verofix está dirigida a actividades profesionales y no está diseñada para menores. No deben incorporarse datos de menores salvo que sea estrictamente necesario, lícito y se cuente con las autorizaciones exigibles.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">11. Cambios</h2>
+                <p>
+                    La Política puede actualizarse por cambios legales, de seguridad o funcionales. Se modificará la fecha de actualización y los cambios relevantes se informarán antes de resultar aplicables cuando corresponda. Si un cambio requiere una nueva autorización, ésta será solicitada.
+                </p>
+
+                <h2 class="text-lg font-bold text-brand-navy pt-4 border-t border-brand-border/60">12. Contacto</h2>
+                <div class="break-all bg-brand-light p-4 rounded-xl border border-brand-border font-mono text-xs text-brand-navy flex flex-col gap-1.5">
+                    <div><strong>Responsable:</strong> Diego Ormazabal (DevOrmazabal)</div>
+                    <div><strong>Correo:</strong> <a href="mailto:ormazabal.dev@gmail.com" class="text-brand-blue hover:underline">ormazabal.dev@gmail.com</a></div>
+                    <div><strong>Sitio:</strong> <a href="https://ormazabaldev.github.io" class="text-brand-blue hover:underline">https://ormazabaldev.github.io</a></div>
+                    <div><strong>Términos:</strong> <a href="terminos-verofix.html" class="text-brand-blue hover:underline">Términos y licencia de Verofix</a></div>
                 </div>
             </div>
         </article>
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-brand-navy text-white py-8 border-t border-white/5">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
-            <span class="text-xs text-blue-200/60 font-medium">Verofix - Solución de Reportes Operativos</span>
-            <span class="text-xs text-blue-200/40 block mt-2 sm:mt-0">
-                &copy; 2026 DevOrmazabal. Todos los derechos reservados.
-            </span>
+            <span class="text-xs text-blue-200/60 font-medium">Verofix - Reportes de inspección técnica</span>
+            <span class="text-xs text-blue-200/40 block mt-2 sm:mt-0">&copy; 2026 DevOrmazabal. Todos los derechos reservados.</span>
         </div>
     </footer>
-
 </body>
 </html>
